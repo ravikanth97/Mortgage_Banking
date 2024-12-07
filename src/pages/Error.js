@@ -5,25 +5,22 @@ const Error = () => {
     const navigate = useNavigate();
 
     return (
-
       <>
-        <div className="d-flex align-items-center justify-content-center vh-50 mt-5">
-          <div className="w-30">
-            <h2 className="text-center">OOPS..</h2>
-          </div>
-        </div>
-        <div className="d-flex align-items-center justify-content-center vh-50 mt-5">
-          <span>
-            Something went wrong
-            <a
-              className="cursor-pointer"
+        <div class="text-center">
+          <h4 class="text-9xl font-bold text-blue-600">
+            Oops! Something went wrong
+          </h4>
+          <p class="text-gray-500 mt-2">
+            Click here {" "}
+            <a style={{cursor: "pointer"}}
               onClick={() => navigate("/account-summary")}
+              class="mt-6 pl-4 inline-block px-6 py-30  bg-blue-600 font-semibold rounded-md hover:bg-blue-700"
             >
-              click here
-            </a>{" "}
-            to navigate to dashboard
-          </span>
-          </div>
+              Go Home 
+            </a>
+            {" "} to navigate to Home
+          </p>
+        </div>
       </>
     );
 }
