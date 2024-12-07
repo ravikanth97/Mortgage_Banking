@@ -48,7 +48,7 @@ const Login = () => {
             name="customerId"
             value={formData.customerId}
             onChange={handleChange}
-            autocomplete="off"
+            autoComplete="off"
           />
         </div>
         <div className="mb-3">
@@ -62,7 +62,7 @@ const Login = () => {
             name="password"
             value={formData.password}
             onChange={handleChange}
-            autocomplete="off"
+            autoComplete="off"
           />
         </div>
         <button type="submit" className="btn btn-primary w-100">
