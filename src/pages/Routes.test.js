@@ -9,11 +9,9 @@ import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import authReducer, { login } from "../store/authSlice";
 import * as authSlice from "../store/authSlice";
 import Login from "./Login";
+import Error from "./Error";
 
-// Mock the login action
-//jest.spyOn(authSlice, "login").mockImplementation(jest.fn());
-
-describe("Error Component", () => {
+describe("Error Screen Component", () => {
 
     const renderWithRouter = (ui, {route='/'} = {}) => {
         const history = createMemoryHistory({initialEntries: [route]});
@@ -29,7 +27,7 @@ describe("Error Component", () => {
     });
     
     test('navigates to Error screen', () => {
-        const {history} = renderWithRouter(<App/>, {route: '/error'});
+        const {history} = renderWithRouter(<Error/>, {route: '/error'});
         expect(screen.getByText(/Error page/i)).toBeInTheDocument();
     });
 
@@ -39,3 +37,40 @@ describe("Error Component", () => {
     // });
 
 });
+
+
+describe("Login screen Component", () => {
+    let customerStore;
+    const renderWithRedux = (preloadedState) => {
+      
+      const rootReducer = combineReducers({
+        auth: authReducer,
+      });
+  
+      // Add redux-thunk middleware to handle async actions
+      customerStore = configureStore({
+        reducer: rootReducer,
+        preloadedState,
+      });
+  
+      render(
+        <Provider store={customerStore}>
+          <Login />
+        </Provider>
+      );
+    };
+  
+    beforeEach(() => {
+      jest.clearAllMocks();
+    });
+  
+    test("User should see the login form", () => {
+      renderWithRedux({
+        auth: { is_logged_in: false, user: null, error: null },
+      });
+
+      expect(screen.getByLabelText(/userId/i)).toBeInTheDocument();
+      expect(screen.getByLabelText(/pswd/i)).toBeInTheDocument();
+      expect(screen.getByRole("button", { name: /loginBtn/i })).toBeInTheDocument();
+    });
+  });

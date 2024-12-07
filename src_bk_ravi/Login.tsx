@@ -20,12 +20,12 @@ const Login = () => {
         <>
         <div>Login</div>
         <div className="container">
-            <label>UserName</label><input type="text"/>
+            <label>UserName</label><input name="userId" type="text"/>
         </div>
         <div>
-            <label>Password</label><input type="password"/>
+            <label>Password</label><input name="pswd" type="password"/>
         </div>
-        <input type="submit" onClick={() => submitLogin()}/>
+        <input name="loginBtn" type="Login" onClick={() => submitLogin()}/>
         </>
     )
 }
