@@ -1,0 +1,212 @@
+{
+    "customers": [
+        {
+            "id": "CUST001",
+            "password": "cGFzc3dvcmQ=",
+            "name": "John Doe",
+            "dob": "29/01/1992",
+            "gender": "female",
+            "created_at": "2024-12-07 02:10:52",
+            "updated_at": "2024-12-07 02:10:52"
+        },
+        {
+            "id": "CUST002",
+            "password": "cGFzc3dvcmQ=",
+            "name": "Jane Smith",
+            "dob": "12/02/1993",
+            "gender": "female",
+            "created_at": "2024-12-07 02:10:52",
+            "updated_at": "2024-12-07 02:10:52"
+        },
+        {
+            "id": "CUST003",
+            "password": "cGFzc3dvcmQ=",
+            "name": "Michael Johnson",
+            "dob": "25/06/1999",
+            "gender": "female",
+            "created_at": "2024-12-07 02:10:52",
+            "updated_at": "2024-12-07 02:10:52"
+        }
+    ],
+    "accounts": [
+        {
+            "id": "5028293897",
+            "customer_id": "CUST001",
+            "account_type": "savings",
+            "account_name": "Savings Account 207",
+            "currency_type": "SGD",
+            "balance": 4692.09,
+            "created_at": "2024-12-07 02:13:56",
+            "interest_rate": 0.0,
+            "tenure": 0.0,
+            "loan_amount": 0.0,
+            "property_details": null
+        },
+        {
+            "id": "9396248407",
+            "customer_id": "CUST001",
+            "account_type": "savings",
+            "account_name": "Savings Account 286",
+            "currency_type": "SGD",
+            "balance": 4025.4,
+            "created_at": "2024-12-07 02:13:56",
+            "interest_rate": 0.0,
+            "tenure": 0.0,
+            "loan_amount": 0.0,
+            "property_details": null
+        },
+        {
+            "id": "9669325028",
+            "customer_id": "CUST001",
+            "account_type": "mortgage",
+            "account_name": "Mortgage Account 884",
+            "currency_type": "SGD",
+            "balance": -388078.29,
+            "created_at": "2024-12-07 02:13:56",
+            "interest_rate": 5.5,
+            "tenure": 16.2,
+            "loan_amount": 242495.74,
+            "property_details": "Property for John Doe"
+        },
+        {
+            "id": "4610921454",
+            "customer_id": "CUST002",
+            "account_type": "savings",
+            "account_name": "Savings Account 656",
+            "currency_type": "SGD",
+            "balance": 1584.18,
+            "created_at": "2024-12-07 02:13:56",
+            "interest_rate": 0.0,
+            "tenure": 0.0,
+            "loan_amount": 0.0,
+            "property_details": null
+        },
+        {
+            "id": "5477238935",
+            "customer_id": "CUST002",
+            "account_type": "savings",
+            "account_name": "Savings Account 205",
+            "currency_type": "SGD",
+            "balance": 1159.62,
+            "created_at": "2024-12-07 02:13:56",
+            "interest_rate": 0.0,
+            "tenure": 0.0,
+            "loan_amount": 0.0,
+            "property_details": null
+        },
+        {
+            "id": "1521530674",
+            "customer_id": "CUST002",
+            "account_type": "mortgage",
+            "account_name": "Mortgage Account 279",
+            "currency_type": "SGD",
+            "balance": -192324.84,
+            "created_at": "2024-12-07 02:13:56",
+            "interest_rate": 5.5,
+            "tenure": 14.2,
+            "loan_amount": 121300.7,
+            "property_details": "Property for Jane Smith"
+        },
+        {
+            "id": "1425124788",
+            "customer_id": "CUST003",
+            "account_type": "savings",
+            "account_name": "Savings Account 703",
+            "currency_type": "SGD",
+            "balance": 4872.0,
+            "created_at": "2024-12-07 02:13:56",
+            "interest_rate": 0.0,
+            "tenure": 0.0,
+            "loan_amount": 0.0,
+            "property_details": null
+        },
+        {
+            "id": "9231575480",
+            "customer_id": "CUST003",
+            "account_type": "savings",
+            "account_name": "Savings Account 903",
+            "currency_type": "SGD",
+            "balance": 3428.62,
+            "created_at": "2024-12-07 02:13:56",
+            "interest_rate": 0.0,
+            "tenure": 0.0,
+            "loan_amount": 0.0,
+            "property_details": null
+        },
+        {
+            "id": "4422089495",
+            "customer_id": "CUST003",
+            "account_type": "mortgage",
+            "account_name": "Mortgage Account 419",
+            "currency_type": "SGD",
+            "balance": -167613.27,
+            "created_at": "2024-12-07 02:13:56",
+            "interest_rate": 5.5,
+            "tenure": 28.0,
+            "loan_amount": 466271.94,
+            "property_details": "Property for Michael Johnson"
+        }
+    ],
+    "transactions": [
+        {
+            "id": "7566838554",
+            "account_id": "5028293897",
+            "transaction_type": "debit",
+            "account_type": "savings",
+            "amount": 494.53,
+            "transaction_date": "2024-12-07 02:10:52",
+            "description": "Transfer to Another Savings Account",
+            "status": "success"
+        },
+        {
+            "id": "9396248407",
+            "account_id": "9669325028",
+            "transaction_type": "credit",
+            "account_type": "mortgage",
+            "amount": 1000.84,
+            "transaction_date": "2024-12-07 02:10:52",
+            "description": "Transfer from Savings Account",
+            "status": "success"
+        },
+        {
+            "id": "7566838554",
+            "account_id": "4610921454",
+            "transaction_type": "debit",
+            "account_type": "savings",
+            "amount": 494.53,
+            "transaction_date": "2024-12-07 02:10:52",
+            "description": "Transfer to Another Savings Account",
+            "status": "success"
+        },
+        {
+            "id": "9396248407",
+            "account_id": "1521530674",
+            "transaction_type": "credit",
+            "account_type": "mortgage",
+            "amount": 600.84,
+            "transaction_date": "2024-12-07 02:10:52",
+            "description": "Transfer from Savings Account",
+            "status": "success"
+        },
+        {
+            "id": "7566838554",
+            "account_id": "1425124788",
+            "transaction_type": "debit",
+            "account_type": "savings",
+            "amount": 494.53,
+            "transaction_date": "2024-12-07 02:10:52",
+            "description": "Transfer to Another Savings Account",
+            "status": "success"
+        },
+        {
+            "id": "9396248407",
+            "account_id": "4422089495",
+            "transaction_type": "credit",
+            "account_type": "mortgage",
+            "amount": 200.84,
+            "transaction_date": "2024-12-07 02:10:52",
+            "description": "Transfer from Savings Account",
+            "status": "success"
+        }
+    ]
+}
