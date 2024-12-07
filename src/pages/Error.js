@@ -5,14 +5,6 @@ const Error = () => {
     const navigate = useNavigate();
 
     return (
-      // <>
-      //   <div className="errorPage">
-      //     <label style={{marginTop: "50px"}}>Something went wrong<a className="cursor-pointer" onClick={() => navigate("/accountsummary")}>
-      //         click here
-      //       </a> to navigate to dashboard
-      //     </label>
-      //   </div>
-      // </>
 
       <>
         <div className="d-flex align-items-center justify-content-center vh-50 mt-5">
@@ -25,7 +17,7 @@ const Error = () => {
             Something went wrong
             <a
               className="cursor-pointer"
-              onClick={() => navigate("/accountsummary")}
+              onClick={() => navigate("/account-summary")}
             >
               click here
             </a>{" "}
