@@ -1,15 +1,20 @@
-import { useSelector } from 'react-redux';
+import React from 'react';
+import styled from 'styled-components';
 
-const Savings = () => {
-    const savings = useSelector((state: any) => state.accounts.savings);
+const Container = styled.div`
+  margin-bottom: 2rem;
+`;
 
-    return (
-        <>
-            <div>Welcome to Savings Details</div>
-            <label> Savings balance: {savings.balance}</label>
-            <label> Remarks: {savings.Remarks}</label>
-        </>
-    )
-}
+const Savings: React.FC<{ account: any }> = ({ account }) => {
+  return (
+    <Container>
 
-export default Savings
+      <p><strong>Account Number:</strong> {account.account_id}</p>
+      <p><strong>Account Type:</strong> {account.account_type}</p>
+      <p><strong>Available Balance:</strong> ${account.balance}</p>
+      <p><strong>Last Transaction Date:</strong> {account.last_transaction_date}</p>
+    </Container>
+  );
+};
+
+export default Savings;

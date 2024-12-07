@@ -1,0 +1,71 @@
+{
+  "accounts": [
+    {
+      "account_id": "9669325028",
+      "account_type": "savings",
+      "name": "Neelima",
+      "balance": 494.53,
+      "last_transaction_date": "2024-12-07 02:10:52",
+      "transactions": [
+        {
+          "id": "7566838554",
+          "amount": 494.53,
+          "description": "Transfer to Another Savings Account",
+          "status": "success",
+          "transaction_date": "2024-12-07 02:10:52",
+          "transaction_type": "debit"
+        }
+      ]
+    },
+    {
+      "account_id": "0269388218",
+      "account_type": "savings",
+      "name": "Deepak",
+      "balance": 109.84,
+      "last_transaction_date": "2024-12-07 02:10:52",
+      "transactions": [
+        {
+          "id": "9396248407",
+          "amount": 109.84,
+          "description": "Transfer from Savings Account",
+          "status": "success",
+          "transaction_date": "2024-12-07 02:10:52",
+          "transaction_type": "credit"
+        }
+      ]
+    },
+    {
+      "account_id": "3344778822",
+      "account_type": "mortgage",
+      "name": "Vishnu",
+      "balance": -2109.84,
+      "last_transaction_date": "2024-12-07 02:10:52",
+      "mortgage_type": "Buy new property",
+      "property_cost": 300000,
+      "deposit_amount": 60000,
+      "transactions": [
+        {
+          "id": "9396248407",
+          "amount": 109.84,
+          "description": "Transfer from Savings Account",
+          "status": "success",
+          "transaction_date": "2024-12-07 02:10:52",
+          "transaction_type": "credit"
+        }
+      ]
+    }
+  ],
+  "mortgages": [
+    {
+      "mortgage_id": "111111111",
+      "savings_account_id": "9669325028",
+      "account_type": "mortgage",
+      "balance": -240000,
+      "last_transaction_date": "2024-12-07 02:10:52",
+      "mortgage_type": "Buy new property",
+      "property_cost": 300000,
+      "deposit_amount": 60000,
+      "password": "password123"
+    }
+  ]
+}
