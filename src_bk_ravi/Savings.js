@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 
 const Savings = () => {
-    const savings = useSelector((state: any) => state.accounts.savings);
+    const savings = useSelector(state => state.accounts.savings);
 
     return (
         <>
