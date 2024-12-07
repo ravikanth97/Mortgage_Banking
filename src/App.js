@@ -5,6 +5,7 @@ import RootLayout from "./layouts/RootLayout";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import AccountSummary from "./pages/AccountSummary";
+import Error from "./pages/Error";
 import { logout } from "./store/authSlice"; // Import auth actions
 
 const App = () => {
@@ -39,6 +40,10 @@ const App = () => {
           path: "account-summary",
           element: <AccountSummary />,
           loader: authLoader,
+        },
+        {
+          path: "error",
+          element: <Error />
         }
       ],
     },
