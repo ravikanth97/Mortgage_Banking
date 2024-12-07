@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-//Create Slice for accessing redux store through out the application
+//Create Slice for accessing redux store through out the application, test
 const initialState = {
     customerDetails: [],
     savings: {balance: 0, remarks: ''},
