@@ -6,7 +6,9 @@ const Error = () => {
 
     return (
         <>
-            <div>Something went wrong click here to navigate to dashboard <a className="cursor-pointer" onClick={() => navigate("/accountsummary")}> Dashboard </a></div>
+            <div className="container mx-auto">Something went wrong click here to navigate to dashboard 
+                <a className="cursor-pointer" onClick={() => navigate("/accountsummary")}> Dashboard </a>
+            </div>
         </>
     )
 }

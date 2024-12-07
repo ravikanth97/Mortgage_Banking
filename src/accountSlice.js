@@ -1,12 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { useEffect } from 'react';
 
-useEffect(() => {
-    fetch("")
-})
-
+//Create Slice for accessing redux store through out the application
 const initialState = {
-    customerDetails: customerData,
+    customerDetails: [],
     savings: {balance: 0, remarks: ''},
     mortgage: {outstanding: 0, remarks: ''}
 }
