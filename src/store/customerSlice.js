@@ -7,8 +7,8 @@ const initialState = {
     mortgage: {outstanding: 0, remarks: ''}
 }
 
-const accountSlice = createSlice({
-name: 'accounts',
+const customerSlice = createSlice({
+name: 'customer',
 initialState: [],
 reducers: {
     setSavings(state, action) {
@@ -20,6 +20,6 @@ reducers: {
 }
 })
 
-export const {setSavings, setMortgage} = accountSlice.actions;
-export default accountSlice.reducer;
+export const {setSavings, setMortgage} = customerSlice.actions;
+export default customerSlice.reducer;
 
