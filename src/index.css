@@ -74,3 +74,14 @@ button:focus-visible {
 .cursor-pointer {
   cursor: pointer;
 }
+
+.errorPage {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background-color: #cabcbc;
+  border: 2px;
+  border-radius: 5px;
+  color: red;
+  align-items: center;
+}
